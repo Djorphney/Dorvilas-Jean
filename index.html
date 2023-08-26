@@ -39,24 +39,44 @@
         ctx.strokeRect(100, 180, 80, 90);
         ctx.strokeRect(280, 185.5, 60, 85);
         ctx.strokeRect(470, 185.5, 60, 85);
-        //Serrure_1
+        //Cerrure_1
         ctx.beginPath()
         ctx.arc(168, 225, 1, 0, 2 * Math.PI, false);
         ctx.stroke();
-        //Serrure_2
+        //Cerrure_2
         ctx.beginPath()
         ctx.arc(333, 227, 1, 0, 2 * Math.PI, false);
         ctx.stroke();
-         //Serrure_3
+          //Cerrure_3
         ctx.beginPath()
         ctx.arc(477, 227, 1, 0, 2 * Math.PI, false);
         ctx.stroke();
         //la fenetre
         ctx.strokeRect(380, 150, 50, 50);
         ctx.strokeRect(375, 145, 60, 60);
-        //le cercle
+        //l'emoji
+        //Cercle
         ctx.beginPath()
-        ctx.arc(140, 80, 20, 0, 2 * Math.PI, false);
+        ctx.arc(30, 40, 20, 0, 2 * Math.PI, false);
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+        //yeux
+        ctx.beginPath()
+        ctx.arc(22, 35, 1, 0, 2 * Math.PI, false);
+        ctx.stroke();
+        ctx.beginPath()
+        ctx.arc(38, 35, 1, 0, 2 * Math.PI, false);
+        ctx.stroke();
+        //Nez
+        ctx.beginPath()
+        ctx.moveTo(30,45);
+        ctx.lineTo(30,40);
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+        //bouche
+        ctx.beginPath()
+        ctx.arc(30, 45, 8, 0, 1 * Math.PI, false);
+        ctx.lineWidth = 1.5;
         ctx.stroke();
     </script>
 </body></html>
