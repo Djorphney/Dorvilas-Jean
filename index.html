@@ -23,8 +23,8 @@
         ctx.moveTo(30,120);
         ctx.lineTo(140,30);
         ctx.lineTo(250,30);
-        ctx.lineTo(360,30);
-        ctx.lineTo(460,120);
+        ctx.lineTo(440,30);
+        ctx.lineTo(560,120);
         ctx.closePath();
         ctx.moveTo(250,120);
         ctx.lineTo(140,30);
@@ -33,17 +33,27 @@
         ctx.stroke();
         //les murs de la maison
         ctx.strokeRect(40, 121, 210, 150);
-        ctx.strokeRect(250, 121, 200, 150);
+        ctx.strokeRect(250, 121, 300, 150);
         //L'entree de la maison
         ctx.strokeRect(105, 185.5, 70, 85);
         ctx.strokeRect(100, 180, 80, 90);
-        //Cerrure
+        ctx.strokeRect(280, 185.5, 60, 85);
+        ctx.strokeRect(470, 185.5, 60, 85);
+        //Serrure_1
         ctx.beginPath()
         ctx.arc(168, 225, 1, 0, 2 * Math.PI, false);
         ctx.stroke();
+        //Serrure_2
+        ctx.beginPath()
+        ctx.arc(333, 227, 1, 0, 2 * Math.PI, false);
+        ctx.stroke();
+         //Serrure_3
+        ctx.beginPath()
+        ctx.arc(477, 227, 1, 0, 2 * Math.PI, false);
+        ctx.stroke();
         //la fenetre
-        ctx.strokeRect(330, 150, 50, 50);
-        ctx.strokeRect(325, 145, 60, 60);
+        ctx.strokeRect(380, 150, 50, 50);
+        ctx.strokeRect(375, 145, 60, 60);
         //le cercle
         ctx.beginPath()
         ctx.arc(140, 80, 20, 0, 2 * Math.PI, false);
