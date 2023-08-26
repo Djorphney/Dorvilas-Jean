@@ -20,16 +20,33 @@
 
         //le toit de la maison
         ctx.beginPath();
-        ctx.moveTo(50,120);
-        ctx.lineTo(225,30);
-        ctx.lineTo(400,120);
+        ctx.moveTo(30,120);
+        ctx.lineTo(140,30);
+        ctx.lineTo(250,30);
+        ctx.lineTo(360,30);
+        ctx.lineTo(460,120);
         ctx.closePath();
+        ctx.moveTo(250,120);
+        ctx.lineTo(140,30);
         ctx.strokeStyle= '#ab0101';
         ctx.lineWidth= 3;
         ctx.stroke();
         //les murs de la maison
-        ctx.strokeRect(60, 121, 330, 150);
+        ctx.strokeRect(40, 121, 210, 150);
+        ctx.strokeRect(250, 121, 200, 150);
         //L'entree de la maison
-        ctx.strokeRect(185, 185.5, 70, 85);
+        ctx.strokeRect(105, 185.5, 70, 85);
+        ctx.strokeRect(100, 180, 80, 90);
+        //Cerrure
+        ctx.beginPath()
+        ctx.arc(168, 225, 1, 0, 2 * Math.PI, false);
+        ctx.stroke();
+        //la fenetre
+        ctx.strokeRect(330, 150, 50, 50);
+        ctx.strokeRect(325, 145, 60, 60);
+        //le cercle
+        ctx.beginPath()
+        ctx.arc(140, 80, 20, 0, 2 * Math.PI, false);
+        ctx.stroke();
     </script>
 </body></html>
