@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/user/ProjetCanvas/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Cours JavaScript</title>
+        
+        <link rel="stylesheet" href="file:///C:/Users/user/ProjetCanvas/cours.css">
+        <script src="file:///C:/Users/user/ProjetCanvas/cours.js" async=""></script>
+        <style>
+            #c1{
+                background-color: #EEE;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="c1" width="600" height="300" style="border: 1px solid #d3d3d3;"></canvas>
+    
+    <script>
+        let canvas = document.getElementById('c1');
+        let ctx = canvas.getContext('2d');
+
+        //le toit de la maison
+        ctx.beginPath();
+        ctx.moveTo(50,120);
+        ctx.lineTo(225,30);
+        ctx.lineTo(400,120);
+        ctx.closePath();
+        ctx.strokeStyle= '#ab0101';
+        ctx.lineWidth= 3;
+        ctx.stroke();
+        //les murs de la maison
+        ctx.strokeRect(60, 121, 330, 150);
+        //L'entree de la maison
+        ctx.strokeRect(185, 185.5, 70, 85);
+    </script>
+</body></html>
